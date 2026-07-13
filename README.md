@@ -8,7 +8,6 @@ Paper:
 
 > Wavelet-ASPP U-Net: Enhancing Ultrasound Image Segmentation with Multi-Scale Context and Frequency-Aware Features  
 > Xin Cheng, Wenbo Yue, Xiaming Wu, Jiahui Xie, Junjie Zhang, Chang Li, Yajun Yu, Xinglong Wu, and Guoping Xu  
-> Biomedical Signal Processing and Control, 2026.
 
 ---
 

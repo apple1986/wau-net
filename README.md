@@ -207,7 +207,7 @@ For fair comparison, all models should be trained using the same preprocessing, 
 @article{cheng2026waunet,
   title   = {Wavelet-ASPP U-Net: Enhancing Ultrasound Image Segmentation with Multi-Scale Context and Frequency-Aware Features},
   author  = {Cheng, Xin and Yue, Wenbo and Wu, Xiaming and Xie, Jiahui and Zhang, Junjie and Li, Chang and Yu, Yajun and Wu, Xinglong and Xu, Guoping},
-  journal = {Biomedical Signal Processing and Control},
+  journal = {XXX,
   year    = {2026},
   note    = {To appear}
 }

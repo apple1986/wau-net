@@ -77,7 +77,7 @@ Example structure:
 
 ```text
 dataset/
-└── camvid/
+└── xxx_dataset/
     ├── train/
     ├── trainannot/
     ├── val/
@@ -97,7 +97,7 @@ Example:
 ```bash
 python train.py \
   --model <MODEL_NAME> \
-  --dataset camvid \
+  --dataset xxx_dataset \
   --gpus 0
 ```
 
@@ -114,7 +114,7 @@ Example:
 ```bash
 python test.py \
   --model <MODEL_NAME> \
-  --dataset camvid \
+  --dataset xxx_dataset \
   --checkpoint ./checkpoints/model.pth \
   --save \
   --save_seg_dir ./result/ \
@@ -137,8 +137,8 @@ Use `evaluate_metrics.py` to calculate evaluation metrics from saved prediction 
 
 ```bash
 python evaluate_metrics.py \
-  --gt-dir ./dataset/camvid/testannot \
-  --pred-dir ./result/camvid/WAU-Net \
+  --gt-dir ./dataset/xxx_dataset/testannot \
+  --pred-dir ./result/xxx_dataset/WAU-Net \
   --model-name WAU-Net \
   --out-dir ./result/eval \
   --out-prefix WAU-Net
@@ -148,14 +148,14 @@ python evaluate_metrics.py \
 
 ```bash
 python evaluate_metrics.py \
-  --gt-dir ./dataset/camvid/testannot \
+  --gt-dir ./dataset/xxx_dataset/testannot \
   --out-dir ./result/eval \
   --out-prefix comparison \
   --pred-dirs \
-  UNet=./result/camvid/UNet \
-  "UNet+ASPP=./result/camvid/UNet_ASPP" \
-  "UNet+Wavelet=./result/camvid/UNet_Wavelet" \
-  "WAU-Net=./result/camvid/WAU-Net"
+  UNet=./result/xxx_dataset/UNet \
+  "UNet+ASPP=./result/xxx_dataset/UNet_ASPP" \
+  "UNet+Wavelet=./result/xxx_dataset/UNet_Wavelet" \
+  "WAU-Net=./result/xxx_dataset/WAU-Net"
 ```
 
 The script outputs:

@@ -5,9 +5,26 @@ PyTorch implementation of **WAU-Net (Wavelet-ASPP U-Net)** for ultrasound image 
 WAU-Net introduces an **ASPP with Wavelet Module (AWWM)** at the U-Net bottleneck. A single-level 2D Haar DWT (`J=1`, `mode='zero'`) decomposes the bottleneck feature map into `LL`, `LH`, `HL`, and `HH`. The three high-frequency subbands are concatenated and processed by ASPP branches with dilation rates **1, 3, and 5**. The processed low-frequency feature, ASPP-enhanced high-frequency features, and original high-frequency subbands are then fused by a projection block.
 
 ## Paper
+If this repository is helpful to your research, please consider citing our work:
 
-> **Wavelet-ASPP U-Net: Enhancing Ultrasound Image Segmentation with Multi-Scale Context and Frequency-Aware Features**  
-> Xin Cheng, Wenbo Yue, Xiaming Wu, Jiahui Xie, Junjie Zhang, Chang Li, Yajun Yu, Xinglong Wu, and Guoping Xu
+> **Wavelet-ASPP U-Net: Enhancing Ultrasound Image Segmentation with Multi-Scale Context and Frequency-Aware Features**
+> Xin Cheng, Wenbo Yue, Xiaming Wu, Jiahui Xie, Junjie Zhang, Chang Li, Yajun Yu, Xinglong Wu, Guoping Xu
+>
+> **Citation**: Cheng, X., Yue, W., Wu, X., Xie, J., Zhang, J., Li, C., Yu, Y., Wu, X., & Xu, G. (2027). Wavelet-ASPP U-Net: Enhancing ultrasound image segmentation with multi-scale context and frequency-aware features. *Biomedical Signal Processing and Control*, 129, 111478.
+>
+> - Journal version: https://www.sciencedirect.com/science/article/abs/pii/S1746809426020367
+> - Preprint version: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5766412
+```bibtex
+@article{cheng2027waveletaspp,
+  title={Wavelet-ASPP U-Net: Enhancing Ultrasound Image Segmentation with Multi-Scale Context and Frequency-Aware Features},
+  author={Xin Cheng and Wenbo Yue and Xiaming Wu and Jiahui Xie and Junjie Zhang and Chang Li and Yajun Yu and Xinglong Wu and Guoping Xu},
+  journal={Biomedical Signal Processing and Control},
+  volume={129},
+  pages={111478},
+  year={2027},
+  publisher={Elsevier}
+}
+
 
 ## Repository Structure
 
